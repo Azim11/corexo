@@ -1,0 +1,106 @@
+/* Import bold, modern display font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+
+  /* Light background with depth */
+  --color-background: #FFF8F8;
+  --color-foreground: #1A0808;
+
+  /* Cards with elevation */
+  --color-card: #FFFFFF;
+  --color-card-foreground: #1A0808;
+
+  /* Popover */
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #1A0808;
+
+  /* Primary – Electric Crimson */
+  --color-primary: #E01E37;
+  --color-primary-foreground: #FFFFFF;
+
+  /* Secondary – Warm Blush */
+  --color-secondary: #FFE8EB;
+  --color-secondary-foreground: #8B0E1C;
+
+  /* Muted text */
+  --color-muted: #A65D68;
+  --color-muted-foreground: #4A2328;
+
+  /* Accent – Deep Scarlet */
+  --color-accent: #C8102E;
+  --color-accent-foreground: #FFFFFF;
+
+  /* Borders & inputs */
+  --color-border: #F5D0D6;
+  --color-input: #F5D0D6;
+
+  /* Focus ring */
+  --color-ring: #E01E37;
+
+  --radius: 1rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background: 
+      radial-gradient(circle at 20% 10%, rgba(224, 30, 55, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(200, 16, 46, 0.06) 0%, transparent 50%),
+      linear-gradient(180deg, #FFF8F8 0%, #FFEFEF 100%);
+    background-attachment: fixed;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-secondary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .backdrop-blur-glass {
+    backdrop-filter: blur(20px) saturate(180%);
+  }
+}
