@@ -1,31 +1,32 @@
 const contactInfo = {
-  companyName: "Growthorax",
-  companyNameShort: "Growthorax",
+  companyName: "COREXO",
+  companyNameShort: "Corexo",
 
-  businessEntityType: "Digital Marketing Agency",
+  businessEntityType: "Limited Liability Company (LLC)",
   industry: "Digital Marketing",
 
-  contactPerson: "Phaedra Cichon",
+  contactPerson: "Garcia Daniella A",
   contactPersonRole: "Owner",
 
-  tagline: "Fueling Scalable Growth.",
+  tagline: "Fast, Focused, Results-Driven Marketing.",
 
   description:
-    "Growthorax is a results-driven digital marketing agency focused on accelerating business growth through SEO, paid advertising, social media marketing, and performance-based digital strategies.",
+    "Corexo is a digital marketing agency providing SEO, paid advertising, branding, social media marketing, and data-driven digital strategies to help businesses grow quickly and sustainably.",
 
-  email: "Phaedracicon3@outlook.com",
-  phone: "+1 4653127893",
+  email: "garciadarmida@outlook.com",
+  phone: "+1 4203653608",
 
-  address: "18636 Center Ave, Homewood, IL 60430, United States of America",
+  address:
+    "3930 S Hogan Street, Tucson, AZ 85735, United States of America",
 
   registeredAddress:
-    "18636 Center Ave, Homewood, IL 60430, United States of America",
+    "3930 S Hogan Street, Tucson, AZ 85735, United States of America",
 
-  businessHours: "Mon–Fri: 9:00 AM – 6:00 PM CST",
+  businessHours: "Mon–Fri: 9:00 AM – 6:00 PM EST",
 
-  // Google Maps Embed (Homewood, IL 60430)
+  // Google Maps Embed (Tucson, Arizona)
   location:
-    "https://www.google.com/maps?q=18636+Center+Ave,+Homewood,+IL+60430,+USA&output=embed",
+    "https://www.google.com/maps?q=3930+S+Hogan+Street,+Tucson,+AZ+85735,+USA&output=embed",
 };
 
 export default contactInfo;
